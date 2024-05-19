@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}
+About - Sociiity
+{% endblock title %}
+
+{% block head %}
+  <style>
+    body {
+      background-color: #f0f0f0; /* Slightly dimmer background color */
+    }
+
+    .about-container {
+      margin: 50px auto;
+      max-width: 800px;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px; /* Increased border radius for a softer look */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Increased box shadow for depth */
+    }
+
+    h2 {
+      color: #007bff;
+      font-size: 28px; /* Larger font size for better emphasis */
+      margin-bottom: 20px; /* Increased margin for better spacing */
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .creator-section {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .creator-heading {
+      color: #007bff;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .creator-name {
+      font-weight: bold;
+      color: #28a745; /* Green color for emphasis */
+    }
+
+    .creator-image {
+      border-radius: 50%;
+      margin-top: 10px;
+      max-width: 200px;
+      height: auto;
+    }
+
+    .linkedin-link {
+      color: #007bff;
+    }
+  </style>
+{% endblock head %}
+
+
+
+{% block body %}
+  <div class="container about-container">
+    <h2>About Us</h2>
+    <p>Sociiity is a website for the unofficial voting of Pakistani main political parties.</p>
+    
+    <h2>Note:</h2>
+    <ul>
+      <li>The results are not guaranteed to be as accurate as official ones.</li>
+      <li>There are no restrictions based on age or location.</li>
+      <li>Our website is unbiased, valuing everyone equally.</li>
+    </ul>
+    <div class="creator-section">
+      <h2 class="creator-heading">Person Behind It</h2>
+      <p>who's behind this, you ask?</p>
+      <p class="creator-name">Well, it's me, Muhammad Zubair Tahir.</p>
+      <img class="creator-image" src="https://mzubairtahir.com/wp-content/uploads/2024/02/muhammad-zubair-tahir.jpeg">
+      <p></p>
+      <p>Connect with me on  <a class="linkedin-link" href="https://www.linkedin.com/in/mzubairtahir07/" target="_blank">LinkedIn</a>.</p>
+    </div>
+  </div>
+{% endblock body %}

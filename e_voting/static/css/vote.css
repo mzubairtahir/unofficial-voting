@@ -1,0 +1,18 @@
+
+.vote-form{
+    background-color: rgb(195, 191, 191);
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+select#partyOptions{
+    font-size: 14px ;
+    width: 190px;
+
+}
+
+.vote-form label{
+    margin-right: 5px;
+    width: 80px;
+}

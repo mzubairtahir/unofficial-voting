@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href={% static "css/results.css" %}>
+{% endblock head %}
+
+{% block title %}
+Results - Sociiity
+{% endblock title %}
+
+{% block body %}
+<div class="my-2">
+    <h1 class = "primary-font text-center">RESULTS</h1>    
+</div>
+
+    <div class="d-flex justify-content-center flex-wrap main px-2">
+        
+    {% for data_dict in DATA  %}
+    {% include "components/card.html" with party_name=data_dict.name total_votes=data_dict.total_votes image=data_dict.picture code=data_dict.code%}
+    
+    {% endfor %}
+</div>
+
+<div class="p-2 py-4 d-flex justify-content-center my-2">
+    <a href="/vote" class="btn btn-outline-success">Cast your Vote</a>
+</div>
+
+{% endblock body %}
